@@ -58,7 +58,7 @@ if uploaded_file is not None:
         f.write(uploaded_file.read())
 
     # Open video with OpenCV
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(temp_video_path)
 
     stframe = st.empty()
 
